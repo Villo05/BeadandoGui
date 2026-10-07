@@ -28,21 +28,212 @@ public class GondolatOlvasoGui extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btngrp1 = new javax.swing.ButtonGroup();
+        lblCim = new javax.swing.JLabel();
+        pnlOszlop1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtOszlop1 = new javax.swing.JTextArea();
+        pnlOszlop2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtOszlop2 = new javax.swing.JTextArea();
+        pnlOszlop3 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        txtOszlop3 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        rb1 = new javax.swing.JRadioButton();
+        rb2 = new javax.swing.JRadioButton();
+        rb3 = new javax.swing.JRadioButton();
+        btnKeveres = new javax.swing.JButton();
+        lblKivalasztott = new javax.swing.JLabel();
+        txtKivalasztott = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        lblCim.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblCim.setText("Gondolatolvasó kártya");
+
+        pnlOszlop1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "1. oszlop", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        txtOszlop1.setEditable(false);
+        txtOszlop1.setColumns(20);
+        txtOszlop1.setRows(5);
+        txtOszlop1.setText("P_Ász\nP_X\nT_Ász\nT_X\nZ_Ász\nZ_X\nM_Ász");
+        txtOszlop1.setBorder(null);
+        txtOszlop1.setOpaque(false);
+        jScrollPane1.setViewportView(txtOszlop1);
+
+        javax.swing.GroupLayout pnlOszlop1Layout = new javax.swing.GroupLayout(pnlOszlop1);
+        pnlOszlop1.setLayout(pnlOszlop1Layout);
+        pnlOszlop1Layout.setHorizontalGroup(
+            pnlOszlop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
+        pnlOszlop1Layout.setVerticalGroup(
+            pnlOszlop1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop1Layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlOszlop2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "2. oszlop", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        txtOszlop2.setEditable(false);
+        txtOszlop2.setColumns(20);
+        txtOszlop2.setRows(5);
+        txtOszlop2.setText("P_Kir\nP_IX\nT_Kir\nT_IX\nZ_Kir\nZ_IX\nM_Kir");
+        txtOszlop2.setBorder(null);
+        txtOszlop2.setOpaque(false);
+        jScrollPane2.setViewportView(txtOszlop2);
+
+        javax.swing.GroupLayout pnlOszlop2Layout = new javax.swing.GroupLayout(pnlOszlop2);
+        pnlOszlop2.setLayout(pnlOszlop2Layout);
+        pnlOszlop2Layout.setHorizontalGroup(
+            pnlOszlop2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(10, Short.MAX_VALUE))
+        );
+        pnlOszlop2Layout.setVerticalGroup(
+            pnlOszlop2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop2Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        pnlOszlop3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "3. oszlop", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 12))); // NOI18N
+
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
+
+        txtOszlop3.setEditable(false);
+        txtOszlop3.setColumns(20);
+        txtOszlop3.setRows(5);
+        txtOszlop3.setText("P_Fel\nP_VIII\nT_Fel\nT_VIII\nZ_Fel\nZ_VIII\nM_Fel");
+        txtOszlop3.setBorder(null);
+        txtOszlop3.setOpaque(false);
+        jScrollPane3.setViewportView(txtOszlop3);
+
+        javax.swing.GroupLayout pnlOszlop3Layout = new javax.swing.GroupLayout(pnlOszlop3);
+        pnlOszlop3.setLayout(pnlOszlop3Layout);
+        pnlOszlop3Layout.setHorizontalGroup(
+            pnlOszlop3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 77, Short.MAX_VALUE)
+                .addGap(10, 10, 10))
+        );
+        pnlOszlop3Layout.setVerticalGroup(
+            pnlOszlop3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlOszlop3Layout.createSequentialGroup()
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel1.setText("Melyik oszlopban a választott kártya?");
+
+        btngrp1.add(rb1);
+        rb1.setText("1. oszlop");
+
+        btngrp1.add(rb2);
+        rb2.setText("2. oszlop");
+
+        btngrp1.add(rb3);
+        rb3.setText("3. oszlop");
+
+        btnKeveres.setText("Keverés");
+        btnKeveres.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnKeveresActionPerformed(evt);
+            }
+        });
+
+        lblKivalasztott.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        lblKivalasztott.setText("A kiválasztott kártya:");
+
+        txtKivalasztott.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblCim, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(99, 99, 99))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(10, 10, 10)
+                                    .addComponent(rb1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(45, 45, 45)
+                                    .addComponent(rb2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                                    .addComponent(rb3, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(lblKivalasztott, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(txtKivalasztott)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(pnlOszlop1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(pnlOszlop2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(pnlOszlop3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(142, 142, 142)
+                        .addComponent(btnKeveres, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblCim)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pnlOszlop1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlOszlop2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pnlOszlop3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(rb1)
+                    .addComponent(rb2)
+                    .addComponent(rb3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnKeveres, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblKivalasztott)
+                    .addComponent(txtKivalasztott, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnKeveresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnKeveresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnKeveresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -70,5 +261,23 @@ public class GondolatOlvasoGui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnKeveres;
+    private javax.swing.ButtonGroup btngrp1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JLabel lblCim;
+    private javax.swing.JLabel lblKivalasztott;
+    private javax.swing.JPanel pnlOszlop1;
+    private javax.swing.JPanel pnlOszlop2;
+    private javax.swing.JPanel pnlOszlop3;
+    private javax.swing.JRadioButton rb1;
+    private javax.swing.JRadioButton rb2;
+    private javax.swing.JRadioButton rb3;
+    private javax.swing.JTextField txtKivalasztott;
+    private javax.swing.JTextArea txtOszlop1;
+    private javax.swing.JTextArea txtOszlop2;
+    private javax.swing.JTextArea txtOszlop3;
     // End of variables declaration//GEN-END:variables
 }
